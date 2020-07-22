@@ -1,0 +1,60 @@
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+
+<meta charset="UTF-8">
+<style>
+.loadbg {
+width:100%;
+height:5px;
+position:fixed;
+top:0px;
+left:0%;
+background:#f0f0f0;
+z-index:3;
+}
+
+.load {
+width:0%;
+height:5px;
+position:fixed;
+top:0px;
+left:0%;
+background:#4285f4;
+-webkit-animation: loading 3s infinite linear;
+z-index:4;
+}
+
+.top {width: 100%;height: 50px;color: #ffffff;font-size: 25px;opacity:1.0; position:fixed;z-index:1000;left:0px;top:0px; -webkit-backdrop-filter: blur(15px); backdrop-filter: blur(15px); background: rgba(33, 33, 33, 0.8);padding: 3px 0px;z-index:2; font-family: 'Kosugi Maru', sans-serif;}
+
+@-webkit-keyframes loading {
+	0% {
+		width:10%;
+             left:-20%;
+	}
+	80% {
+		width:120%;
+             left:110%;
+
+	}
+	100% {
+		width:100%;
+             left:120%;
+
+	}
+
+}
+}
+
+</style>
+
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vS9QGru3w4siD0FzdUoqQ7kQAjKPGWWDnpVuJqcRkGyjNmaH4aPqYutniI1wFRLoJa7jHxgV7zD8by-/pub?embedded=true" style="width:100%;height:auto;position: absolute;top:0px;left:0px;z-index:0;" frameborder="0"></iframe>
+
+<div class="loadbg"></div>
+<div class="load"></div>
+<div class="top"><center style="position: absolute;left:50%;top:50%;transform:translate(-50%,-50%);">貼圖關鍵字列表</center></div>
+<script>
+$(window).ready(function() {
+$('.loadbg,.load').delay(5555).fadeOut(555);
+});
+</script>
