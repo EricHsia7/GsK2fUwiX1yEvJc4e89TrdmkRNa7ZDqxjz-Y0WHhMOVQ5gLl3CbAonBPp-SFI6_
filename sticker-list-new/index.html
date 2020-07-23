@@ -57,7 +57,7 @@ $("#search-input").bind("change paste keyup", function(){
     mSearch.html("");
     return;
   }; 
-  mSearch.html('.wrap:not([data-index*="' + value.toLowerCase() + '"]) {display: none;}');
+  mSearch.html('.pdiv:not([data-index*="' + value.toLowerCase() + '"]) {display: none;}');
 });
  </script>
   <div class="search-form"><input id="search-input" type="text" placeholder="type name to search" /><button>Search</button>
