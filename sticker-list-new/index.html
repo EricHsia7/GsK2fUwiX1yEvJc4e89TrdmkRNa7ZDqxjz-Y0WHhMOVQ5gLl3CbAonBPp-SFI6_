@@ -46,6 +46,45 @@ width:75%;
 
 }
 
+ 
+ .loadbg {
+width:100%;
+height:5px;
+position:fixed;
+top:0px;
+left:0%;
+background:#f0f0f0;
+z-index:3;
+}
+
+.load {
+width:0%;
+height:5px;
+position:fixed;
+top:0px;
+left:0%;
+background:#4285f4;
+-webkit-animation: loading 3s infinite linear;
+z-index:4;
+}
+
+
+@-webkit-keyframes loading {
+	0% {
+		width:10%;
+             left:-20%;
+	}
+	80% {
+		width:120%;
+             left:110%;
+
+	}
+	100% {
+		width:100%;
+             left:120%;
+
+	}
+}
 </style>
 <center>
  
@@ -210,6 +249,13 @@ width:75%;
 
 <div class="pdiv"><center><img src="img/54.png" class="img"><br><input class="input" value="實在非常抱歉"id="54"></input><br><a href="javascript:copy('54')" class="b">複製</a></center></div>
 
+<div class="loadbg"></div>
+<div class="load"></div>
+<script>
+$(window).ready(function() {
+$('.loadbg,.load').delay(5555).fadeOut(555);
+});
+</script>
 
 </center>
 <script>
