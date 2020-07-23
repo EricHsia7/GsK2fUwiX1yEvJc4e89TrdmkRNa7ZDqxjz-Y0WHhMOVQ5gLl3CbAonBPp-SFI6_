@@ -212,7 +212,10 @@ width:75%;
 
 </center>
 <script>
-$(window).ready(function() {
-$('.loadbg,.load').delay(5555).fadeOut(555);
-});
+function copy(id) {
+var copys = document.getElementById(id);
+copys.select();
+document.execCommand("Copy");
+setTimeout("document.activeElement.blur(); ",800);
+}
 </script>
