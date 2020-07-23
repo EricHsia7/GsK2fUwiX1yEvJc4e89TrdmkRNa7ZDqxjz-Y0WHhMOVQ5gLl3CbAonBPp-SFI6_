@@ -49,40 +49,32 @@ width:75%;
  
  .loadbg {
 width:100%;
-height:5px;
+height:100%;
 position:fixed;
 top:0px;
-left:0%;
-background:#f2f2f2;
+left:0px;
+background:#ffffff;
 z-index:3;
 }
 
 .load {
-width:0%;
-height:5px;
-position:fixed;
-top:0px;
-left:0%;
-background:#4285f4;
--webkit-animation: loading 3s infinite linear;
-z-index:4;
+border-top:4px #333333 solid;
+border-left:4px #333333 solid;
+border-right:4px #333333 solid;
+border-bottom:4px #f0f0f0 solid;
+width:60px;
+height:60px;
+border-radius:999em;
+-webkit-animation: loading 1s infinite linear;
 }
 
 
 @-webkit-keyframes loading {
-	0% {
-		width:10%;
-             left:-20%;
+	from {
+		-webkit-transform: rotate(0deg);
 	}
-	80% {
-		width:150%;
-             left:110%;
-
-	}
-	100% {
-		width:100%;
-             left:120%;
-
+	to {
+		-webkit-transform: rotate(360deg);
 	}
 }
 </style>
