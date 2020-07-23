@@ -48,8 +48,19 @@ width:75%;
 
 </style>
 <center>
-
-<div class="pdiv"><center><img src="img/1.png" class="img"><br><input class="input" value="okay" id="1"></input><br><a href="javascript:copy('1')" class="b">複製</a></center></div>
+<script>
+ var that = $(this);
+var mSearch = $("#m-search");
+$("#search-input").bind("change paste keyup", function(){
+  var value = $(this).val();
+  if (!value) {
+    mSearch.html("");
+    return;
+  }; 
+  mSearch.html('.wrap:not([data-index*="' + value.toLowerCase() + '"]) {display: none;}');
+});
+ </script>
+<div class="pdiv"><center><img src="img/1.png" class="img" data-index="okay"><br><input class="input" value="okay" id="1"></input><br><a href="javascript:copy('1')" class="b">複製</a></center></div>
 
 
 <div class="pdiv"><center><img src="img/2.png" class="img"><br><input class="input" value="Yes" id="2"></input><br><a href="javascript:copy('2')" class="b">複製</a></center></div>
