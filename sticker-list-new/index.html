@@ -240,7 +240,8 @@ document.execCommand("Copy");
 setTimeout("document.activeElement.blur(); ",800);
 }
 function randomp() {
-			$('body,html').animate({scrollTop: $('#p' + parseInt(Math.random()*(53))+1 ).offset().top + 'px' }, 888 );
+var hhh = parseInt(Math.random()*(53))+1 ;
+$('body,html').animate({scrollTop: $('#p' + hhh ).offset().top }, 888 );
   }
 </script>
 </body>
