@@ -59,7 +59,8 @@ z-index:3;
 
 </style>
 <center>
-	<div class="pdiv" id="pgg"><center><a href="javascript:randomP()" class="b">隨機</a></center></div>
+	<body>
+	<div class="pdiv" id="pgg"><center><a href="javascript:randomp()" class="b">隨機</a></center></div>
  
 <div class="pdiv" id="p1"><center><img src="img/1.png" class="img"><br><input class="input" value="okay" id="1"></input><br><a href="javascript:copy('1')" class="b">複製</a></center></div>
 
@@ -238,7 +239,8 @@ copys.select();
 document.execCommand("Copy");
 setTimeout("document.activeElement.blur(); ",800);
 }
-function randomP() {
-			$('body,html').stop().animate({scrollTop: $('#p' + parseInt(Math.random()*(53))+1 ).offset().top + 'px' }, 888 );
+function randomp() {
+			$('body,html').animate({scrollTop: $('#p' + parseInt(Math.random()*(53))+1 ).offset().top + 'px' }, 888 );
   }
 </script>
+</body>
