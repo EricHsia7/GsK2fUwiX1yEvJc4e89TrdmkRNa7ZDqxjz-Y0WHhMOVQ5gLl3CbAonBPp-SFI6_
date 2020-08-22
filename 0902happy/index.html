@@ -25,7 +25,13 @@ background:#000;
 <span id="image">
 <img src="https://erichsia7.github.io/GsK2fUwiX1yEvJc4e89TrdmkRNa7ZDqxjz-Y0WHhMOVQ5gLl3CbAonBPp-SFI6_/0902happy/img/影像-1.jpeg" class="img">
 </span>
+    
+    <a href="javascript:auto()" style="position:fixed;bottom:0px;left:0px;">自動播放</a>
 <script>
+function auto() {
+$('body').animate({scrollTop: 0 + 'px'},1).animate({scrollTop: 74 + 'px'},5000);
+}
+    
 $( window ).scroll(function() {
     $('.img').attr('src','https://erichsia7.github.io/GsK2fUwiX1yEvJc4e89TrdmkRNa7ZDqxjz-Y0WHhMOVQ5gLl3CbAonBPp-SFI6_/0902happy/img/影像-' + ($('body').scrollTop() + 1) + '.jpeg');
 if($('body').scrollTop() > 73) {
