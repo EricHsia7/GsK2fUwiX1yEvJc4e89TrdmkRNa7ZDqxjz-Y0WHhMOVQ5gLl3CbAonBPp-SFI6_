@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<title>中元節快樂</title>
+<style>
+body {
+background:#000;
+}
+.img {
+position:fixed;
+width:100vw;
+top:0px;
+left:0px;
+}
+.r {
+position:absolute;
+top:0px;
+left:0px;
+width:100%;
+height:calc(7500px);
+background:#000;
+}
+</style>
+<body>
+<div class="r"></div>
+<span id="image">
+<img src="https://erichsia7.github.io/GsK2fUwiX1yEvJc4e89TrdmkRNa7ZDqxjz-Y0WHhMOVQ5gLl3CbAonBPp-SFI6_/0902happy/img/影像-1.jpeg" class="img">
+</span>
+<script>
+$( window ).scroll(function() {
+    $('.img').attr('src','https://erichsia7.github.io/GsK2fUwiX1yEvJc4e89TrdmkRNa7ZDqxjz-Y0WHhMOVQ5gLl3CbAonBPp-SFI6_/0902happy/img/影像-' + ($('body').scrollTop() + 1) + '.jpeg');
+if($('body').scrollTop() > 73) {
+$('body').animate({scrollTop: 74 + 'px'},1);
+}
+if($('body').scrollTop() < 0) {
+$('body').animate({scrollTop: 0 + 'px'},1);
+}
+});
+</script>
+
+</body>
