@@ -274,12 +274,13 @@ $(function(){
 	}).scroll();
 });
 </script>
+<div id="msg" class="msg">已複製關鍵字！</div>
 <script>
 function copy(id) {
 var copys = document.getElementById(id);
 copys.select();
 document.execCommand("Copy");
-setTimeout("document.activeElement.blur(); ",800);
+$('#msg').delay(555).animate({top: 70 + 'px' },333).delay(1111).animate({top: -80 + 'px' },333);
 }
 function randomp() {
 var hhh = parseInt(Math.random()*(53))+1 ;
