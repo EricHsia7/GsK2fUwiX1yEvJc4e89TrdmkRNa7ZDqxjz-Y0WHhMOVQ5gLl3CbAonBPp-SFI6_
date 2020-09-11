@@ -46,6 +46,22 @@ text-align: center;
 font-family: 'Kosugi Maru', sans-serif;
 caret-color: rgba(0, 0, 0, 0);
 }
+.input:hover {
+ height:50px;
+ width:90%;
+ font-size:30px;
+border-bottom:3px solid #212121;
+border-top:3px solid #ffffff;
+border-left:3px solid #ffffff;
+border-right:3px solid #ffffff;
+border-radius: 0px;
+-webkit-appearance:none;
+outline:none;
+-webkit-tap-highlight-color:rgba(0,0,0,0);
+text-align: center;
+font-family: 'Kosugi Maru', sans-serif;
+caret-color: rgba(0, 0, 0, 0);
+}
 .pbutton {
 width:150px;
 height:50px;
@@ -297,7 +313,6 @@ $('#msg').html('已複製關鍵字！').delay(555).animate({top: 10 + 'px' },333
 function randomp() {
 var hhh = parseInt(Math.random()*(53))+1 ;
 $('body,html').animate({scrollTop: $('#p' + hhh ).offset().top }, 888 );
-document.getElementById('p' + hhh).focus();
 $('#msg').html('已隨機選擇貼圖！').delay(555).animate({top: 10 + 'px' },333).delay(1111).animate({top: -80 + 'px' },333);
 }
 </script>
