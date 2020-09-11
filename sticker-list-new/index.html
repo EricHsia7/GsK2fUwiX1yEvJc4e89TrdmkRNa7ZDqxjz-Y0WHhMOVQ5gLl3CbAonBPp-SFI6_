@@ -297,6 +297,7 @@ $('#msg').html('已複製關鍵字！').delay(555).animate({top: 10 + 'px' },333
 function randomp() {
 var hhh = parseInt(Math.random()*(53))+1 ;
 $('body,html').animate({scrollTop: $('#p' + hhh ).offset().top }, 888 );
+document.getElementById('p' + hhh).focus();
 $('#msg').html('已隨機選擇貼圖！').delay(555).animate({top: 10 + 'px' },333).delay(1111).animate({top: -80 + 'px' },333);
 }
 </script>
